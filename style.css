@@ -1,0 +1,69 @@
+/*
+CSS for Clicker Game Template
+by Mike Henry (mikeshenry@gmail.com)
+
+Available from https://github.com/mashmac2/clicker-game-template
+
+You have permission to reuse this code for non-commercial purposes with attribution
+*/
+
+body {
+	background-color: #91a0ba;
+	margin: 0;
+}
+#heading{
+	padding: 20px;
+	margin: 10px auto;
+	margin-bottom: 20px;
+	border: 1px solid black;
+	background-color: #eee;
+	overflow: auto;
+}
+
+#content p{
+  display:none;
+}
+#clicker{
+  display:none;
+}
+#seller{
+	display:none;
+	
+}
+
+#clicker button{
+  padding: 15px 25px;
+  font-size: 40px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#autoclicker{
+	display:none;
+}
+#sell {
+padding: 15px 25px;
+  font-size: 40px;
+  display: block;
+  margin-bottom: 20px;
+}
+#sl{
+	padding: 15px 25px;
+  font-size: 40px;
+  display: block;
+  margin-bottom: 20px;
+}
+#chainsaw{
+padding: 15px 25px;
+  font-size: 40px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#footer{
+  margin-top: 50px;
+}
+
+#saving-status-1, #saving-status-2{
+  display:none;
+}

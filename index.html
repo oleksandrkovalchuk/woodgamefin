@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <!-- Clicker Game Template by Mike Henry <mikeshenry@gmail.com> -->
+	  <!-- Available from https://github.com/mashmac2/clicker-game-template -->
+	  <!-- You have permission to reuse this code for non-commercial purposes with attribution -->
+		<title>Clicker Game Template</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- adding jQuery, Bootstrap, and Font Awesome -->
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+		</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- end adding jQuery, Bootstrap, and Font Awesome -->
+	</head>
+	<body>
+	<div class="container">
+		<div class="row" id="heading">
+			<div id="content" class="col-md-6">
+				<!--You could put status messages here -->
+				<p class="one text-left text primary">You have to go to the forest to cut some wood <br>The purpose of the game is to maximize your revenues <br> You will have 7 minutes to play this game</p>
+			</div>
+			<div id="progress-bar" class="col-md-3">
+				<!--You could put game progress here -->
+			</div>
+		</div>
+		<div class="row">
+			<div id="clicker" class="col-md-2 col-md-offset-2">
+				<button id="clicks" class="btn btn-primary" name="clicks" onclick="increment(clicks)">Axe <i class="fa fa-gavel"></i></button>
+				<p>Click on the axe to cut some wood)</p>
+				<p class="text-danger">Total wood: <span id="clicks-status">0</span></p>
+				<button id="autoclicker" class="btn btn-success" name="autoclicker" onclick="autoclickerButton()">Saw <i class="fa fa-angellist"></i></button>
+				<p>The price is 5$, cuts 1 piece of wood each second</p>
+				<p class="text-success">Total saws: <span id="autoclicker-status">0</span></p>
+				<button id="chainsaw" class="btn btn-success" name="chainsaw" onclick="chainsawButton()">Chainsaw <i class="fa fa-certificate"></i></button>
+				<p>The price of the chainsaw is 50$, cuts 10 pieces of wood each second 
+				<p class="text-success">Total chainsaws: <span id="chainsaw-status">0</span></p>
+			</div>
+			<div id="seller" class="col-md-2 col-md-offset-2">
+			<button id="sell" class="btn btn-danger" name="sell" onclick="sellerButton()">Sell 100 pieces<i class="fa fa-arrow-up"></i></button>
+			<p>For selling 100 pieces of wood you will earn 10$</p>
+			<button id="sl" class="btn btn-primary" name="sl" onclick="slButton()">Salesperson <i class="fa fa-black-tie"></i></button>
+			<p>The cost of hiring a salesperson is 250$</p>
+			<p>The salesperson sells wood and takes a comission of 10%</p>
+			<p class="text-info">Total salespeople: <span id="sl-status">0</p>
+			<p class="font-weight-bold text-info">Total revenue: $ <span id="sells-status">0</p>
+			</div>
+		</div>
+		<div class="row" id="footer">
+		  <div class="col-md-6">
+		    <i>Clicker Game Template by Oleksandr Kovalchuk (The base of the code is used under permission of Mike Henry)<br>enjoy)</i>
+		  </div>
+		  <div class="col-md-6">
+		    <span id="saving-status-2">
+		       Saved
+		    </span>
+		  </div>
+		</div>
+	</div>
+	<script type="text/javascript" src="game.js"></script>
+	</body>
+</html>
